@@ -73,3 +73,42 @@ footer {
     text-align: center;
     margin-top: 100px;
 }
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: inline; 
+    }
+
+    .about-me {
+        position: relative;
+        width: 100%;
+        left: 0;
+        transform: none;    /* I used transform to center the fixed div */
+    }                       /*It's no longer fixed so transform isn't needed*/
+
+    .empty-div {
+        display: none;  /* The empty div is a place-holder for the grid display */
+    }                   /* Grid not needed for phone attributes */
+
+    .grid-item {
+        height: 100px;
+        padding: 0;
+        margin-bottom: 5%;
+    }
+
+    h3 {
+        position: absolute;
+        top: 20%;   /*<- Justify's the text at roughly the center of the div */
+        left: 0;    /* ... I have been coding for months and still can't */
+        bottom: 0;  /* remember how to justify text within a div*/
+        right: 0;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}
