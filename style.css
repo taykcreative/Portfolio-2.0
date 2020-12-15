@@ -4,6 +4,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Encode Sans Expanded', Helvetica, sans-serif;
+    font-size: 13pt;
     color: #353535;
 }
 
@@ -11,14 +12,14 @@ body {
 .top-navbar {
     overflow: hidden;
     background-color: #d9d9d9;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
 }
 
 .top-navbar a {
     float: left;
-    font-size: 14px;
-    color: #353535;
+    font-size: 12pt;
+    color: #000;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -30,12 +31,12 @@ body {
 }
 
 .caret-down {
-    font-size: 10px;
+    font-size: 8pt;
     margin-left: 5px;
 }
   
 .dropdown .dropbtn {
-    font-size: 14px;
+    font-size: 12pt;
     border: none;
     outline: none;
     color: #000;
@@ -47,6 +48,7 @@ body {
   
 .top-navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #284B63;
+    color: #fff;
 }
 
 .dropdown-content {
@@ -80,14 +82,14 @@ body {
 /*--------------- HEADER ---------------- */
 .header-div {
     min-height: 75px;
-    width: 100%;
+    width: 75%;
     margin: auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: auto auto;
 }
 
 .head-text {
-    padding: 0 1%;
+    padding: 0 1%; 
 }
 
 .h1-text {
@@ -98,7 +100,7 @@ body {
 
 h1 {
     font-family: 'Encode Sans Semi Condensed', Helvetica, sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 100;
 }
 
@@ -110,7 +112,7 @@ h1 {
 
 h2 {
     font-family: 'Encode Sans', Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -118,17 +120,12 @@ h2 {
 /*---------------PAGE CONTENT ---------------- */
 
 main {
-    width: 95%;
     margin: auto;
+    max-width: 75%;
 }
 
 .wrapper, section { 
     margin: 100px 0;
-}
-
-.about {
-    width: 90%;
-    margin: auto;
 }
 
 p {
@@ -150,8 +147,8 @@ p {
 
 .emphasis {
     font-family: 'Permanent Marker', Helvetica, sans-serif;
-    color: #cf8c8f;
-    font-size: 18px;
+    color: #ff8095;
+    font-size: 16pt;
 }
 
 .exp-p2 {
@@ -160,11 +157,11 @@ p {
 
 .skill-container {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 30% auto;
 }
 
-.dev-skills, .des-skills {
-    text-align: center;
+.des-skills, .dev-skills {
+    width: fit-content;
 }
 
 .bold {
@@ -202,18 +199,48 @@ footer {
     text-align: center;
     font-size: small;
 }
+
+
+
+
 /*--------------- RESPONSIVENESS ---------------- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) { /* PORTRAIT */
+
     .header-div {
-        display: inline-block;
+        width: 100%;
+        display: block;
     }
 
-    h1 {
-        text-align: left;
+    .head-text {
+        padding: 0;
     }
 
-    h2 {
-        text-align: right;
+    h1, h2 {
+        text-align: center;
+    }
+
+   h1,h2 {
+        margin: 0;
+    }
+
+    main {
+        max-width: 90%;
+    }
+
+    .skill-container {
+        display: block;
+    }
+    
+    .des-skills, .dev-skills {
+        width: fit-content;
+    }
+
+    .dev-skills {
+        margin-top: 30px;
+    }
+
+    .des-skills {
+        margin-top: 50px;
     }
 }
