@@ -204,7 +204,6 @@ footer {
 }
 /*--------------- RESPONSIVENESS ---------------- */
 
-
 @media screen and (max-width: 600px) {
     .header-div {
         display: inline-block;
