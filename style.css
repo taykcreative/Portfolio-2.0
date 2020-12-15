@@ -1,284 +1,220 @@
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap');
 
 body {
-    background-color: #444;
-    background-image: linear-gradient(to right, #000, #444, #444, #000);
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Encode Sans Expanded', Helvetica, sans-serif;
+    color: #353535;
 }
 
-.about-me {
-    position: fixed;
-    width: 40%;
-    left: 50%;                      /* centers a */
-    transform: translate(-50%, 0);  /* fixed div */
+/*----------------- NAVBAR ------------------ */
+.top-navbar {
+    overflow: hidden;
+    background-color: #d9d9d9;
+    font-family: Arial;
+    width: 100%;
 }
 
-header {
+.top-navbar a {
+    float: left;
+    font-size: 14px;
+    color: #353535;
     text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.caret-down {
+    font-size: 10px;
+    margin-left: 5px;
+}
+  
+.dropdown .dropbtn {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+  
+.top-navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #284B63;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*--------------- HEADER ---------------- */
+.header-div {
+    min-height: 75px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.head-text {
+    padding: 0 1%;
+}
+
+.h1-text {
+    text-align: right;
+    text-transform: uppercase;
+    color: #000;
+}
+
+h1 {
+    font-family: 'Encode Sans Semi Condensed', Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.h2-text {
+    margin: auto 0 auto 0;
+    text-align: left;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-family: 'Encode Sans', Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/*---------------PAGE CONTENT ---------------- */
+
+main {
+    width: 95%;
     margin: auto;
 }
 
-h1, h2 {
-    text-shadow: 1px 1px 5px #000;
+.wrapper, section { 
+    margin: 100px 0;
 }
 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap; /* added line */
-    border: 0;
-}
-
-.about-text {
+.about {
+    width: 90%;
     margin: auto;
 }
 
 p {
-    text-indent: 30px;
+    margin-bottom: 50px;
 }
 
-.welcome {
-    font-weight: bold;
-    text-indent: none;
-    text-align: center;
+.etsy-link {
+    color: #3C6E71;
 }
+
+.etsy-link:hover {
+    color: #000;
+}
+
+.etsy-link:visited {
+    color: #284B63;
+}
+
 
 .emphasis {
-    font-family: 'Permanent Marker', sans-serif; 
-    font-size: 1rem;
-    color: pink;
-    text-shadow: 0px 0px 3px #000;
+    font-family: 'Permanent Marker', Helvetica, sans-serif;
+    color: #cf8c8f;
+    font-size: 18px;
 }
 
-.bigger-font {
-    font-size: 1.3rem;
-}
-
-.center {
+.exp-p2 {
     text-align: center;
 }
 
-a {
-    color: pink;
-}
-
-.container {
-    margin: auto;
+.skill-container {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
-    grid-row-gap: 15%;
+    grid-template-columns: 50% 50%;
 }
 
-.grid-item {
-    display: inline-grid;
-    width: 100%;
-    padding-top: 120%; /*aspect ratio*/
-    position: relative;
+.dev-skills, .des-skills {
     text-align: center;
-    margin: auto; /* centers the grid*/
 }
 
-h3 {
-    margin-top: 7%;
+.bold {
+    font-weight: bold;
 }
 
-h4 { /*start aspect ratio maintenance of div boxes*/
-    position: absolute;
-    top: 40%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    /* end aspect ratio maintenance */
-    background-color: #222222ce;
-    height: fit-content;
-    width: 100%;
-    padding: 5px;
+.skills ul {
+    padding: 0;
 }
 
-.empty-div {
-    display: inline-grid;
-    grid-row: 1 / span 2;
-    grid-column: 2;
-    width: 100%;
-    margin: auto;
-    }
-
-.styling {
-    background-color: #333;
-    border: 4px outset #222;
-    border-radius: 5px;
+li {
+    list-style: none;
 }
 
-.linkedin {
-    grid-row: 2;
-    grid-column: 1;
-    /* Background Image Modifiers */
-    background-image: url(https://cdn.pixabay.com/photo/2020/11/23/03/56/handshake-5768632_640.jpg); 
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    overflow: hidden;
-    
-}
-
-.developer-portfolio {
-    grid-row: 1;
-    grid-column: 3;
-    /* Background Image Modifiers */
-    background-image: url(https://cdn.pixabay.com/photo/2015/04/20/13/17/work-731198_1280.jpg); 
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    overflow: hidden;
-}
-
-.design-portfolio {
-    grid-row: 1;
-    grid-column: 1;
-    /* Background Image Modifiers */
-    background-image: url(https://cdn.pixabay.com/photo/2018/12/09/19/52/painting-3865632_1280.jpg); 
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    overflow: hidden;
-}
-
-.contact-me {
-    grid-row: 2;
-    grid-column: 3;
-    /* Background Image Modifiers */
-    background-image: url(https://cdn.pixabay.com/photo/2020/04/13/10/42/work-5037770_1280.jpg); 
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: grayscale(100%);
-    overflow: hidden;
-}
-
-.grid-item:hover {
-    filter: grayscale(0%) brightness(110%) contrast(110%);
-}
+/*--------------- FOOTER ---------------- */
 
 footer {
-    display: none;
+    background-color: #3C6E71;
+    font-size: small;
 }
 
+.download-cv {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.download-cv a {
+    color: #fff;
+}
+
+.footer-text {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: small;
+}
+/*--------------- RESPONSIVENESS ---------------- */
 
 
-
-
-
-@media screen and (max-width: 1050px) {
-
-    body {
-        background-image: linear-gradient(to right, #444, #444, #000);
+@media screen and (max-width: 600px) {
+    .header-div {
+        display: inline-block;
     }
 
-    .container {
-        margin: auto;
-        display: block;
-    }
-
-    .about-me {
-        left: 0;
-        transform: none;
-        position: relative;
-        width: 60%;
-        float: left;
-    }
-
-    .grid-item {
-        display: block;
-        width: 39%;
-        float: right;
-        height: 100px;
-        padding: 0;
-        margin: 2% auto 4% auto;
-        background-size: 100% auto;
-    }
-
-    .developer-portfolio {
-        margin-top: 5%;
-    }
-
-
-    h4 {
-        position: absolute;
-        top: 20%;   /*<- Justify's the text at roughly the center of the div */
-        left: 0;    /* ... I have been coding for months and still can't */
-        bottom: 0;  /* remember how to justify text within a div*/
-        right: 0;
-    }
-
-    .empty-div {
-        display: none;  /* The empty div is a place-holder for the grid display */
-    }                   /* Grid not needed for phone attributes */
-
-
-
-
-
-
-
-
-@media screen and (max-width: 750px) {
-    body {
-        padding: 0;
-        margin: 0;
-        background-image: linear-gradient(to bottom, #444, #444, #222);
-    }
-
-    .container {
-        margin: auto;
-    }
-
-    .about-me {
-        position: relative;
-        float: none;
-        width: 95%;
-        left: 0;
-        transform: none;        /* I used transform to center the fixed div */
-        margin: 0 auto 0 auto;    /*It's no longer fixed so transform isn't needed*/
-
-    }                       
-
-    .grid-item {
-        float: none;
-        display: block;
-        width: 90%;
-        height: 100px;
-        margin: 10% auto 0 auto;
-        box-shadow: 0 0 5px pink;
-    }
-
-    .empty-div {
-        display: none;
-    }
-
-    header {
-        margin: 10% auto;
+    h1 {
+        text-align: left;
     }
 
     h2 {
-        padding-bottom: 20px;
-        width: 90%;
-        margin: auto;
-    }
-
-    .about-text {
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
-        padding: 7% 0 7% 0;
-        margin-bottom: 7%;
+        text-align: right;
     }
 }

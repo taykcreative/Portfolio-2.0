@@ -4,58 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Taylor Kyle</title>
 </head>
 <body>
-    <div class="container">
-        <div class="empty-div">&nbsp;</div>
-
-        <div class="about-me">
-            <header>
-                <h1>Taylor B. Kyle</h1>
-                <h2>Designer & Developer</h2>
-            </header>
-                <div class="about-text">
-                    <h3 class="sr-only">About Me</h3>
-                        <p>Hello, I am Taylor. Currently located in Vacaville, California. I have been alive for 27 years, 10 of those years have been spent creating digitally.</p>
-
-                        <p class="welcome">Welcome to my page!</p>
-
-                        <p>From modifying my <span class="emphasis">kick-ass</span> MySpace page back in 2006 to now creating functional and responsive webpages. From my childhood of Microsoft Paint to now creating marketing tools and stickers with Adobe Illustrator and Photoshop. From learning MS Office basics in a high-school class to creating and selling PDF files and digital planners in a successful <a href="https://www.etsy.com/shop/theprintingpub/">Online store</a>.</p>
-
-                        <p><span class="emphasis bigger-font">I have always loved creating digitally and hope to make this a full-time career.</span></p>
-                    <h3>Education</h3>
-                    <p>Arizona State University - Graphic Information Technology<br>
-                    Primary Focus: Web Design & Development</p>
-                    <h3>Work</h3>
-                    <p class="center"><a href="https://taylorlovesjrk.myportfolio.com/">Volunteer & Freelance</a></p>
-
-                </div>
+    <header>
+        <div class="header-div">
+            <div class="h1-text head-text">
+                <h1>Taylor Kyle</h1>
+            </div>
+            <div class="h2-text head-text">
+                <h2>Designer &amp; Developer</h2>
+            </div>
         </div>
-            <a href="https://github.com/taykcreative">
-                <div class="developer-portfolio grid-item styling" id="portfolio">
-                    <h4>Developer Portfolio</h4>
-                </div>
-            </a>
 
-            <a href="https://www.behance.net/taykcreative">
-                <div class="design-portfolio grid-item styling">
-                    <h4>Graphic Design Portfolio</h4>
-                </div></a>
+        <nav class="top-navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Developer Portfolio<span class="caret-down">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Projects</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">CodePen</a>
+                    <a href="#">Netlify</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Graphic Design Portfolio<span class="caret-down">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Adobe Design Portfolio</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Contact<span class="caret-down">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </nav>
 
-            <a href="https://www.linkedin.com/in/taykcreative/">
-                <div class="linkedin grid-item styling">
-                    <h4>LinkedIn</h4>
-                </div>
-            </a>
-            <a href="#">
-                <div class="contact-me grid-item styling">
-                    <h4>Contact Me</h4>
-                </div>
-            </a>
+    </header>
+
+    <main>
+        <div class="wrapper">
+        <h3 class="about-h3">About Me:</h3>
+            <section class="about">
+                <p class="about-paragraph abt-p1">Hello, I'm Taylor! Currently working as a barista located in Vacaville, California. I am a mother, step-mother, wife, and pretty awesome person IMO. I have been alive for 27 years, 10 of those years have been spent creating digitally.</p>
+
+                <span class="bold">Experience:</span>
+                <p class="experience-paragraph exp-p1">From modifying my <span class="emphasis">kick-ass</span> MySpace page back in 2006 to now creating functional and responsive webpages. From my childhood of Microsoft Paint to now creating marketing tools and stickers with Adobe Illustrator and Photoshop. From learning MS Office basics in a high-school class to creating and selling PDF files and digital planners in a successful <a href="https://www.etsy.com/shop/theprintingpub" target="_blank" class="etsy-link">Online store</a>.</p>
+
+                <p class="experience-paragraph exp-p2 emphasis">I have always loved creating digitally and hope to make this a full-time career.</p>
+
+                <span class="bold">Education:</span>
+                <p class="experience-paragraph exp-p3 education">Arizona State University - Graphic Information Technology
+                    <br>Primary Focus: Web Design &amp; Development<br>
+                    Expected Graduation: 2022</p>
+            </section>
         </div>
+
+        <section class="skills">
+            <h3 class="skills-h3">My Skills:</h3>
+            <div class="skill-container">
+                <div class="dev-skills">
+                    <span class="bold">Web Development Skills:</span>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li class="make-smaller">Accessibility & Responsive Web Design</li>
+                            <li>Java</li>
+                        </ul>
+                </div>
+                <div class="des-skills">
+                    <span class="bold">Graphic Design Skills:</span>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Procreate App</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer>
-        <span>This website was designed and developed by a dorky mom of four!</span>
+        <div class="download-cv">
+            <a href="">Download Resume</a></li>
+        </div>
+        <div class="footer-text">This website was designed &amp; developed by Taylor Kyle</div>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
