@@ -81,7 +81,7 @@ body {
 
 /*--------------- HEADER ---------------- */
 .header-div {
-    min-height: 75px;
+    min-height: 150px;
     width: 75%;
     margin: auto;
     display: grid;
@@ -117,7 +117,7 @@ h2 {
 
 
 
-/*---------------PAGE CONTENT ---------------- */
+/*--------------- INDEX PAGE CONTENT ---------------- */
 
 main {
     margin: auto;
@@ -125,7 +125,7 @@ main {
 }
 
 .wrapper, section { 
-    margin: 100px 0;
+    margin: 50px auto 100px auto;
 }
 
 p {
@@ -175,6 +175,49 @@ p {
 li {
     list-style: none;
 }
+
+/*---------------CONTACT PAGE-------------*/
+
+.form-wrapper {
+    background-color: pink;
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 5px #777;
+}
+
+form {
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+}
+
+input {
+    margin: 10px auto;
+    width: 100%;
+    font-size: 14pt;
+}
+
+textarea {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.submit {
+    display: block;
+    width: 25%;
+    height: 40px;
+    font-family: 'Encode Sans Expanded', Arial, Helvetica, sans-serif;
+    color:#fff;
+    background-color: #353535;
+    border-radius: 5px;
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+
 
 /*--------------- FOOTER ---------------- */
 
