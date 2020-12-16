@@ -77,6 +77,10 @@ body {
     display: block;
 }
 
+.show {
+    display:block;
+}
+
 
 
 /*--------------- HEADER ---------------- */
@@ -107,6 +111,9 @@ h1 {
 .h2-text {
     margin: auto 0 auto 0;
     text-align: left;
+}
+
+.text-dec {
     text-transform: lowercase;
 }
 
@@ -177,6 +184,8 @@ li {
 }
 
 /*---------------CONTACT PAGE-------------*/
+
+
 
 .form-wrapper {
     background-color: pink;
