@@ -9,6 +9,7 @@ body {
 }
 
 /*----------------- NAVBAR ------------------ */
+
 .top-navbar {
   overflow: hidden;
   background-color: #d9d9d9;
@@ -95,7 +96,7 @@ body {
   padding: 0 1%;
 }
 
-.h1-container { 
+.h1-container {
   text-align: right;
   text-transform: uppercase;
   color: #000;
@@ -107,7 +108,7 @@ h1 {
   font-weight: 100;
 }
 
-.h2-container {  
+.h2-container {
   margin: auto 0 auto 0;
   text-align: left;
 }
@@ -199,20 +200,19 @@ img {
 }
 
 .project {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px #777;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-gap: 2%;
-    margin: 5% auto;
-  }
-
-  .project:hover {
-    box-shadow: 1px 1px 10px #ff8095;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #777;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2%;
+  margin: 5% auto;
 }
-  
+
+.project:hover {
+  box-shadow: 1px 1px 10px #ff8095;
+}
 
 /*---------------GRAPHIC DESIGN PAGE-------------*/
 
@@ -243,7 +243,7 @@ img {
 }
 
 .design:hover {
-    box-shadow: 1px 1px 10px #ff8095;
+  box-shadow: 1px 1px 10px #ff8095;
 }
 
 /*---------------CONTACT PAGE-------------*/
@@ -265,7 +265,7 @@ img {
 }
 
 .form-wrapper:hover {
-    box-shadow: 0 0 10px #ff8095;
+  box-shadow: 0 0 10px #ff8095;
 }
 
 form {
@@ -299,39 +299,49 @@ textarea {
 
 /*--------------- FOOTER ---------------- */
 
-footer { /* The entire footer container */
-    background-color:  #fff;
-    font-size: small;
+footer {
+  /* The entire footer container */
+  background-color: #fff;
+  font-size: small;
 }
 
 .footer-text {
-    padding: 20px 0;
-    text-align: center;
-    font-size: small;
+  padding: 20px 0;
+  text-align: center;
+  font-size: small;
 }
 
 /*------ RESUME -------*/
 
-.download-cv { /* DIV container */
-    margin: auto;
-    width: 80%;
-    padding: 10px 0;
-    text-align: center;
-    border-bottom: 1px solid#ff8095;
+.download-cv {
+  /* DIV container */
+  margin: auto;
+  width: 80%;
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid#ff8095;
 }
 
-.download-cv a { /* Download link */
-    color: #000;
+.download-cv a {
+  /* Download link */
+  color: #000;
 }
 
-.resume { /* I will eventually add a resume to download, but for now I don't have one */
-    display: none;
+.resume {
+  /* I will eventually add a resume to download, but for now I don't have one */
+  display: none;
 }
 
 /*--------------- RESPONSIVENESS ---------------- */
 
 @media screen and (max-width: 900px) {
   /* PORTRAIT */
+
+  .nav-wrapper {
+    margin: auto;
+    display: flex;
+    width: fit-content;
+  }
 
   .header-div {
     width: 100%;
