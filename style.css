@@ -49,7 +49,7 @@ body {
 
 .top-navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: pink;
+  background-color: #ffc0cb;
   color: #000;
 }
 
