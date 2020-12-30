@@ -301,9 +301,6 @@ textarea {
   text-align: center;
 }
 
-
-
-
 /*--------------- LINK PAGE ---------------*/
 
 .lp-linkwrapper {
@@ -320,7 +317,7 @@ textarea {
   box-shadow: 0 0 5px #777;
 }
 
-.lp-links a{
+.lp-links a {
   color: #333;
   text-decoration: none;
 }
@@ -336,10 +333,8 @@ textarea {
   font-size: 3rem;
   text-align: center;
   margin: 40% auto; /* Aspect ratio */
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
-
-
 
 /*--------------- FOOTER ---------------- */
 
@@ -380,11 +375,6 @@ footer {
 
 @media screen and (max-width: 900px) {
   /* PORTRAIT */
-
-  .top-navbar {
-    position: fixed;
-    top: 0;
-  }
 
   .nav-wrapper {
     margin: auto;
@@ -443,7 +433,6 @@ footer {
     margin-bottom: 5%;
   }
 
-
   /* LINK PAGE RESPONSIVENESS */
 
   .lp-header-div {
@@ -461,5 +450,4 @@ footer {
   .lp-text {
     margin: 7% auto; /* Aspect ratio */
   }
-
 }
