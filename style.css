@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500;600;700&family=Encode+Sans+Semi+Condensed:wght@100&family=Encode+Sans:wght@400;500;600;700&family=Permanent+Marker&display=swap");
 
 html {
   font-size: 65%;
@@ -156,7 +156,7 @@ p a:visited {
 
 .emphasis {
   font-family: "Permanent Marker", Helvetica, sans-serif;
-  color: #ff5e79;
+  color: #ff8095;
   font-size: 2.2rem;
 }
 
