@@ -193,7 +193,8 @@ li {
   margin-bottom: 60px;
 }
 
-.project-image, .project-description {
+.project-image,
+.project-description {
   width: 100%;
   height: 100%;
 }
@@ -214,7 +215,8 @@ li {
   margin: 5% auto;
 }
 
-.project-image, .project-description {
+.project-image,
+.project-description {
   display: flex;
   align-items: center;
 }
@@ -243,7 +245,7 @@ img {
   width: 90%;
 }
 
-.design p{
+.design p {
   margin-right: 3%;
   text-align: justify;
 }
@@ -259,7 +261,8 @@ img {
   margin: 5% auto;
 }
 
-.design-image, .design-description {
+.design-image,
+.design-description {
   display: flex;
   align-items: center;
 }
@@ -271,7 +274,6 @@ img {
 .design:hover {
   box-shadow: 1px 1px 10px #ff8095;
 }
-
 
 /*---------------CONTACT PAGE-------------*/
 
@@ -448,15 +450,17 @@ footer {
 
   /* WEB DEV & GRAPHIC DESIGN RESOINSIVENESS */
 
-  .design, .project {
+  .design,
+  .project {
     grid-template-columns: auto;
     grid-gap: 20px;
     margin: 5% auto;
   }
 
-  .design p{
+  .design p {
     margin-right: auto;
     font-size: 1.6rem;
+    text-align: left;
   }
 
   /* LINK PAGE RESPONSIVENESS */
