@@ -125,7 +125,6 @@ h2 {
   font-family: "Encode Sans", Helvetica, sans-serif;
   font-size: 2.4rem;
 }
-
 /*--------------- INDEX PAGE CONTENT ---------------- */
 
 main {
@@ -187,13 +186,14 @@ li {
 }
 
 /*---------------WEB DEVELOPMENT PAGE-------------*/
-
-img {
-  width: 100%;
-  height: 100%;
+.github-chart {
+  width: 90%;
+  margin: auto;
+  margin-top: -60px;
+  margin-bottom: 60px;
 }
 
-.project-image {
+.project-image, .project-description {
   width: 100%;
   height: 100%;
 }
@@ -214,25 +214,38 @@ img {
   margin: 5% auto;
 }
 
+.project-image, .project-description {
+  display: flex;
+  align-items: center;
+}
+
 .project:hover {
   box-shadow: 1px 1px 10px #ff8095;
 }
 
+.calendar {
+  width: 90%;
+}
 /*---------------GRAPHIC DESIGN PAGE-------------*/
+
+.introduction {
+  text-align: center;
+  font-weight: bold;
+}
 
 img {
   width: 100%;
-  height: 100%;
-}
-
-.design-image {
-  width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .design-container {
   margin: auto;
   width: 90%;
+}
+
+.design p{
+  margin-right: 3%;
+  text-align: justify;
 }
 
 .design {
@@ -241,14 +254,24 @@ img {
   box-shadow: 1px 1px 5px #777;
   padding: 20px;
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 2%;
+  grid-template-columns: 50% auto;
+  grid-gap: 20px;
   margin: 5% auto;
+}
+
+.design-image, .design-description {
+  display: flex;
+  align-items: center;
+}
+
+.design-2 img {
+  border: 1px solid #777;
 }
 
 .design:hover {
   box-shadow: 1px 1px 10px #ff8095;
 }
+
 
 /*---------------CONTACT PAGE-------------*/
 
@@ -425,12 +448,15 @@ footer {
 
   /* WEB DEV & GRAPHIC DESIGN RESOINSIVENESS */
 
-  .project,
-  .design {
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-gap: 2%;
-    margin-bottom: 5%;
+  .design, .project {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    margin: 5% auto;
+  }
+
+  .design p{
+    margin-right: auto;
+    font-size: 1.6rem;
   }
 
   /* LINK PAGE RESPONSIVENESS */
